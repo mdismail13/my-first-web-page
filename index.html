@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Md. Ismail">
         <meta name="description" content="This page contains all the things I'm learning how to create as I learn HTML.">
         <title>My first Web Page</title>
@@ -9,31 +10,151 @@
         <link rel="stylesheet" href="main.css">
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <header>
+        <h1>My Goals for the Year</h1>
+
+        <nav aria-label="primary-navigaton">
+            <ul>
+                <li>
+                    <a href="#html">Learn HTML</a>
+                </li>
+                <li>
+                    <a href="#vacation">Planning a Vacation</a>
+                </li>
+            </ul>
+        </nav>
+        </header>
 
         <hr>
 
-        <h2>I'm ready to learn HTML</h2>
-        <p>This is my first web page.</p>
+        <main>
+        <article id="html">
+            <h2>I'm ready to learn HTML</h2>
+            <p>This is my first web page.</p>
 
-        <h3>My Daily Schedule</h3>
-        <p>Let me tell you how:</p>
-            <ol>
-                <li>&nbsp;&nbsp;&nbsp;...I learn more about web dev.</li>
-                <li>&nbsp;&nbsp;&nbsp;...I plan out my schedule.</li>
-                <li>&nbsp;&nbsp;&nbsp;...I use resources from <abbr title="Mozilla Developer Network">MDN</abbr>.</li>
-            </ol>
-        
+            <section>
+                <h3>This is me</h3>
+            <img src="Images/ismail.jpg" alt="A picture of Md. Ismail" title="Md. Ismail" height="300px">
+            <figure>
+                <figcaption>This is Md. Ismail</figcaption>
+                <p>
+                    <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+                </p>
+            </figure>
+            </section>
+            <section>
+            <h3>My Daily Schedule</h3>
+            <p>Let me tell you how:</p>
+                <ol>
+                    <li>&nbsp;&nbsp;&nbsp;...I learn more about web dev.</li>
+                    <li>&nbsp;&nbsp;&nbsp;...I plan out my schedule.</li>
+                    <li>&nbsp;&nbsp;&nbsp;...I use resources from
+                        <a href="https://developer.mozilla.org/" target="_blank">
+                            <abbr title="Mozilla Developer Network">MDN</abbr>
+                        </a>.
+                    </li>
+                </ol>
+                <aside>
+                    <details>
+                        <summary>
+                            Guess the <mark>number of hour</mark> I code per day
+                        </summary>
+                        <p> <time datetime="PT8H">10-12 Hours</time> per day</p>
+                    </details>
+                </aside>
+                <br>
+                <table>
+                    <caption>My Daily Schedule</caption>
+                    <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Activity</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <time datetime="06:00">6 am</time> - <time datetime="12:00">12 pm</time>
+                        </td>
+                        <td>
+                            Write code
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <time datetime="12:00">12 pm</time> - <time datetime="14:00">2 pm</time>
+                        </td>
+                        <td>
+                            Break
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <time datetime="14:00">2 pm</time> - <time datetime="18:00">6 pm</time>
+                        </td>
+                        <td>
+                            Write code
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <time datetime="18:00">6 pm</time> - <time datetime="20:00">8 pm</time>
+                        </td>
+                        <td>
+                            Break
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <time datetime="20:00">8 pm</time> - <time datetime="00:00">12 am</time>
+                        </td>
+                        <td>
+                            Write code
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <time datetime="00:00">12 am</time> - <time datetime="06:00">6 am</time>
+                        </td>
+                        <td>
+                            Sleep
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">All other times</td>
+                        <td>Free time</td>
+                    </tr>
+                    <tr>
+                        <td>Sleep</td>
+                    </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">And that's what I do everyday</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+        </article>
 
         <hr>
+
+        <article id="vacation">
 
         <h2>I'm also planning a vacation</h2>
         <p>I've been working hard and <em>really need a getway.</em></p>
         <p>I live in <abbr title="Kansas">KS</abbr> so I want to visit a beach.</p>
-
+        <section>
         <h3>Places I lie to visit</h3>
+        <img src="Images/home-06.jpeg" alt="traveling logo">
         <ul>
             <li><p>I've heard the good things about the Caribbean</p></li>
+            <figure>
+            <img src="Images/travel.jpeg" alt="traveling logo" height="200px" loading="lazy">
+            <figcaption>
+                A traveling logo
+            </figcaption>
+            </figure>
             <li><p>I've heard good things about going here:</p>
             <address>
                 Margaritaville Island Reserve Riviera Cancun<br>
@@ -42,9 +163,9 @@
             </address>
             </li>
         </ul>
-
+        </section>
         <!--TODO: Add more places-->
-
+        <section>
         <h3>Places I want to avoid</h3>
         <dl>
             <dt>North Pole</dt>
@@ -56,9 +177,17 @@
             <dt>Mountain Tops</dt>
             <dd>These are also cold.</dd>
         </dl>
+        </section>
+        </article>
+        </main>
 
         <hr>
+        <footer>
+            <p>
+                &lt;&lt;&lt;&copy; <a href="about.html">Md. Ismail</a> &gt;&gt;&gt;
+            </p>
 
-        &lt;&lt;&lt;&copy; Md. Ismail &gt;&gt;&gt;
+        <p><a href="#">Back to Top</a></p>
+        </footer>
     </body>
 </html>
